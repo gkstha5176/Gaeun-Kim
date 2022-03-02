@@ -26,7 +26,7 @@ I applied the cost to the utility function so that the smaller the value functio
 When initially setting the location of the robot, **IndexError: list index out of range** sometimes occurs. Even if the robot is placed in the same location, errors appear randomly in one out of five times.
 
 # TODO
--I would like to analyze the cause of BUGS and correct them.
--When cost is applied, the calculation time increases exponentially due to the complexity of value iteration. So I plan to reduce it by calculating value iteration in a different way.
--I implemented a code that controls one robot to determine a target cell and then the other robots to be unable to select that cell. The results showed that the exploration time was longer than that of the algorithm 1, but the experimental conditions were limited. I plan to experiment again based on more diverse conditions.
--I want to create cases where obstacles move or the environment changes over time.
+- I would like to analyze the cause of BUGS and correct them.
+- When cost is applied, the calculation time increases exponentially due to the complexity of value iteration. So I plan to reduce it by calculating value iteration in a different way.
+- I implemented a code that controls one robot to determine a target cell and then the other robots to be unable to select that cell. The results showed that the exploration time was longer than that of the algorithm 1, but the experimental conditions were limited. I plan to experiment again based on more diverse conditions.
+- I want to create cases where obstacles move or the environment changes over time.
