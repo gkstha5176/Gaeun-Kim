@@ -7,6 +7,7 @@ The smaller the cost and the higher the utility, the higher the probability of b
 
 # AUTHORS
 The original author of this code is **QuinnSpearman**. I will skip COPYING/LICENSE by attaching the Github code HTTPS: https://github.com/QuinnSpearman/Coordinated-Multi-Robot-Exploration.git
+
 And I made this code by adding cost function to that code.
 
 # INSTALL
