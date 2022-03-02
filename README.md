@@ -17,10 +17,10 @@ To consider cost function, I calculated the value function of all cells by imple
 I applied the cost to the utility function so that the smaller the value function of a frontier cell, the greater the preference of the robots.
 
 # ChangeLog
-1 Set *value* and *minvalue* method for all classes so that value function is initialized according to the type of cell.
-2 Add the code implementing the value iteration to the line 721 to 735. According to this code, the value function of each cell is updated by the value function of its neighbor cells and the distance to those cells. Here, the probability of each cell being occupied is fixed at zero point one. And iteration should be repeated until convergence originally, it is repeated only five times due to the complexity of the calculation.
-3 In line 801, *minvalue* of each cell updated through value iteration is stored in the variable *cost*.
-4 In line 804, cost function is applied by subtracting the *cost* from the existing utility function. Here, I change the constant multiplied by the cost function to find out which constant has the least exploration time.
+1. Set *value* and *minvalue* method for all classes so that value function is initialized according to the type of cell.
+2. Add the code implementing the value iteration to the line 721 to 735. According to this code, the value function of each cell is updated by the value function of its neighbor cells and the distance to those cells. Here, the probability of each cell being occupied is fixed at zero point one. And iteration should be repeated until convergence originally, it is repeated only five times due to the complexity of the calculation.
+3. In line 801, *minvalue* of each cell updated through value iteration is stored in the variable *cost*.
+4. In line 804, cost function is applied by subtracting the *cost* from the existing utility function. Here, I change the constant multiplied by the cost function to find out which constant has the least exploration time.
 
 # BUGS
 When initially setting the location of the robot, **IndexError: list index out of range** sometimes occurs. Even if the robot is placed in the same location, errors appear randomly in one out of five times.
