@@ -1,8 +1,12 @@
 # README
-This is exploration algorithm code based on papar [Coordinated Multi-Robot Exploration](http://www2.informatik.uni-freiburg.de/~stachnis/pdf/burgard05tro.pdf). 
+This is exploration algorithm code based on papar [Coordinated Multi-Robot Exploration](http://www2.informatik.uni-freiburg.de/~stachnis/pdf/burgard05tro.pdf).
+
 Algorithm 1, presented here, is a method of selecting a target point using cost and utility.
+
 Cost function is obtained as follows: the value function of each cell is obtained using value iteration, which is a popular dynamic programming algorithm. It corresponds to the cumulative cost of moving from the current position of the robot to that cell.
+
 Utility function is obtained as follows: First, let all frontier cells have the same utility. Each time a frontier cell is occupied by a robot, the utility of all frontier cells is reduced, and the degree of decrease depends on the distance to that frontier cell occupied.
+
 The smaller the cost and the higher the utility, the higher the probability of becoming a target cell. Algorithm 1 assigns that target location to a robot which has the best tradeoff between utility and costs.
 
 # AUTHORS
@@ -15,6 +19,7 @@ The code works normally only when *pygame*, *scipy* packages are installed and *
 
 # NEWS
 To consider cost function, I calculated the value function of all cells by implementing the principle of value iteration as a code. 
+
 I applied the cost to the utility function so that the smaller the value function of a frontier cell, the greater the preference of the robots.
 
 # ChangeLog
